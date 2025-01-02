@@ -16,32 +16,38 @@ header {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 40vh; 
+    height: 40vh;
     background-color: darkslategrey;
 }
 
 @media (min-width: 768px) {
     header {
-        height: 70vh;  /* Larger header height for tablet devices */
-        background-size: cover; /* Ensure proper scaling */
+        height: 70vh;
+        /* Larger header height for tablet devices */
+        background-size: cover;
+        background-position: top center;
+        /* Focus the top of the image */
     }
 }
 
 @media (min-width: 1200px) {
     header {
-        height: 100vh;  /* Full screen height for desktop */
-        background-size: cover; /* Ensure proper scaling */
+        height: 100vh;
+        /* Full screen height for desktop */
+        background-size: cover;
+        background-position: top center;
+        /* Focus the top of the image */
     }
 }
 
 @media (min-width: 1366px) {
     header {
-        height: 100vh;  /* Larger header height for tablet devices */
-        background-size: cover; /* Ensure proper scaling */
+        height: 100vh;
+        /* Larger header height for tablet devices */
+        background-size: cover;
+        /* Ensure proper scaling */
     }
 }
-
-
 
 nav {
     background-color: pink;
