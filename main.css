@@ -20,9 +20,65 @@ header {
     background-color: pink;
 }
 
+@media (min-width: 360px) {
+    header {
+        width: auto;
+        height: 35vh;
+        /* Larger header height for tablet devices */
+        background-size: cover;
+        background-position: top center;
+        /* Focus the top of the image */
+    }
+}
+
+@media (min-width: 390px) {
+    header {
+        width: auto;
+        height: 33vh;
+        /* Larger header height for tablet devices */
+        background-size: cover;
+        background-position: top center;
+        /* Focus the top of the image */
+    }
+}
+
+@media (min-width: 414px) {
+    header {
+        width: auto;
+        height: 35vh;
+        /* Larger header height for tablet devices */
+        background-size: cover;
+        background-position: top center;
+        /* Focus the top of the image */
+    }
+}
+
+@media (min-width: 540px) {
+    header {
+        width: auto;
+        height: 50vh;
+        /* Larger header height for tablet devices */
+        background-size: cover;
+        background-position: top center;
+        /* Focus the top of the image */
+    }
+}
+
 @media (min-width: 768px) {
     header {
-        height: 70vh;
+        width: auto;
+        height: 600px;
+        /* Larger header height for tablet devices */
+        background-size: cover;
+        background-position: top center;
+        /* Focus the top of the image */
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        width: auto;
+        height: 40vh;
         /* Larger header height for tablet devices */
         background-size: cover;
         background-position: top center;
@@ -32,6 +88,7 @@ header {
 
 @media (min-width: 1200px) {
     header {
+        width: auto;
         height: 100vh;
         /* Full screen height for desktop */
         background-size: cover;
@@ -42,6 +99,7 @@ header {
 
 @media (min-width: 1366px) {
     header {
+        width: auto;
         height: 100vh;
         /* Larger header height for tablet devices */
         background-size: cover;
