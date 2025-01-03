@@ -86,8 +86,9 @@ header {
 @media (min-width: 1366px) {
     header {
         width: auto;
-        height: 100vh;
+        height: 170vh;
         background-size: cover;
+        background-position: center;
     }
 }
 
