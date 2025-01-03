@@ -135,7 +135,7 @@ section p {
 img {
     height: 300px;
     width: 100%;
-    border: 2px solid red;
+    border: 2px solid pink;
     border-radius: 10px;
     object-fit: cover;
 }
