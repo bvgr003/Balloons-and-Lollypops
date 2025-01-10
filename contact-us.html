@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/png" href="Logos/balloons-and-lollypops.jpg">
     <link rel="stylesheet" href="main.css">
+    <script defer src="emailjs.js"></script> <!-- Custom EmailJS handling script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> <!-- EmailJS Library -->
     <title>Contact Us - Balloons and Lollipops Daycare</title>
 </head>
 
 <body>
-    <header>
-    </header>
+    <header></header>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -40,7 +41,7 @@
     <section id="form" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin: 20px auto; max-width: 500px; padding-right: 45px;">
         <h2>Contact Form</h2>
         <p>Send us a message directly using the form below, and we'll get back to you as soon as possible!</p>
-        <form action="submit_form.php" method="POST" style="width: 100%;">
+        <form id="contact-form" style="width: 100%;">
             <label for="name" style="display: block; text-align: left;">Your Name:</label>
             <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
 
@@ -53,7 +54,6 @@
             <button type="submit" style="padding: 10px 20px; background-color: #f89eb6; border: none; color: white; border-radius: 5px; cursor: pointer;">Send Message</button>
         </form>
     </section>
-
     <hr>
     <section id="social-media">
         <h2>Connect With Us on Social Media</h2>
