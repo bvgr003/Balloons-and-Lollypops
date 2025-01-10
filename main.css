@@ -150,22 +150,22 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
-    }
+}
 
-    footer p {
-        margin: 0;
-        font-size: 1rem;
-        color: #333;
-    }
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
 
-    section values {
-        text-align: center;
-    }
+section values {
+    text-align: center;
+}
 
-    li,
-    p {
-        text-align: left;
-    }
+li,
+p {
+    text-align: left;
+}
 
 #form {
     display: flex;
