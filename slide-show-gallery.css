@@ -1,0 +1,67 @@
+/* General Carousel Container Styling */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Carousel Images */
+.carousel {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carousel img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+.scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .scroll-btn {
+        width: 30px;
+        height: 30px;
+    }
+}

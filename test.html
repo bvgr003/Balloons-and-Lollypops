@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carousel img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+.scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+</style>
+<body>
+<div class="carousel-container">
+        <button class="scroll-btn left-btn" id="scrollLeft">←</button>
+        <div class="carousel" id="carousel">
+            <img src="Images/1.jpg" alt="Image 1">
+            <img src="Images/2.jpg" alt="Image 2">
+            <img src="Images/3.jpg" alt="Image 3">
+            <img src="Images/4.jpg" alt="Image 4">
+            <img src="Images/5.jpg" alt="Image 4">
+            <img src="Images/6.jpg" alt="Image 4">
+        </div>
+        <button class="scroll-btn right-btn" id="scrollRight">→</button>
+    </div>
+    <script src="script.js"></script>
+<script>
+const carousel = document.getElementById('carousel');
+const scrollLeftButton = document.getElementById('scrollLeft');
+const scrollRightButton = document.getElementById('scrollRight');
+
+// Scroll left button
+scrollLeftButton.addEventListener('click', () => {
+    carousel.scrollBy({ left: -200, behavior: 'smooth' });
+});
+
+// Scroll right button
+scrollRightButton.addEventListener('click', () => {
+    carousel.scrollBy({ left: 200, behavior: 'smooth' });
+});
+
+// Optional: Enable touch gestures
+let startX;
+
+carousel.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+carousel.addEventListener('touchmove', (e) => {
+    const touch = e.touches[0];
+    const deltaX = startX - touch.clientX;
+    carousel.scrollLeft += deltaX;
+    startX = touch.clientX;
+});
+
+</script>
+    
+</body>
+</html>
