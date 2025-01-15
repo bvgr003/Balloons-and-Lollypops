@@ -12,26 +12,25 @@
 /* Carousel Images */
 .carousel {
     display: flex;
-    gap: 20px;
+    gap: 13px;
     transition: transform 0.3s ease-in-out;
     overflow-x: auto;
     scroll-behavior: smooth;
 }
 
 .carousel img {
-    width: 300px;
-    height: 300px; 
-    object-fit: fill;
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .carousel img {
-        width: 300px; /* Doubled from 150px */
-        height: 200px; /* Doubled from 100px */
-    }
+.scroll-btn {
+    width: 30px;
+    height: 30px;
+}
 }
 
 /* Scroll Buttons */
@@ -59,17 +58,4 @@
 
 .scroll-btn:hover {
     background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .carousel img {
-        width: 150px;
-        height: 100px;
-    }
-
-    .scroll-btn {
-        width: 30px;
-        height: 30px;
-    }
 }
